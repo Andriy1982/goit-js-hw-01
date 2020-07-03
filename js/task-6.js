@@ -1,4 +1,3 @@
-
 // let credits = 23580;
 // const pricePerDroid = 3000;
 
@@ -24,17 +23,25 @@ let total = 0;
 let input;
 
 do {
+  input = prompt("Введите число!");
 
-input = prompt('Введите число!');
+  console.log(input);
 
-console.log(input);
+  let inputNumber = Number(input);
+  console.log(input);
+  console.log(typeof input);
 
-total += Number(input);
+  console.log(inputNumber);
+  console.log(typeof inputNumber);
 
-console.log(total);
+  if (Number.isNaN(inputNumber)) {
+    alert("Вы ввели некоректные данные");
+    continue;
+  }
 
-}
+  total += Number(input);
 
-while (input !== null);
+  console.log(total);
+} while (input !== null);
 
 alert(`Общая сумма чисел равна ${total}`);
