@@ -25,14 +25,7 @@ let input;
 do {
   input = prompt("Введите число!");
 
-  console.log(input);
-
   let inputNumber = Number(input);
-  console.log(input);
-  console.log(typeof input);
-
-  console.log(inputNumber);
-  console.log(typeof inputNumber);
 
   if (Number.isNaN(inputNumber)) {
     alert("Вы ввели некоректные данные");
@@ -40,8 +33,6 @@ do {
   }
 
   total += Number(input);
-
-  console.log(total);
 } while (input !== null);
 
 alert(`Общая сумма чисел равна ${total}`);
